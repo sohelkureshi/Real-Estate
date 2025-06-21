@@ -1,0 +1,225 @@
+.home-root {
+  background: linear-gradient(135deg, #f8fff6 60%, #a8e6cf 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Decorative Banner */
+.home-banner {
+  background: linear-gradient(90deg, #a8e6cf 60%, #e0f7ef 100%);
+  padding: 2.2rem 1rem 1.2rem 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-radius: 0 0 36px 36px;
+  box-shadow: 0 6px 24px rgba(86, 197, 150, 0.09);
+  animation: fadeInDown 1s;
+}
+.home-banner h1 {
+  color: #234d20;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+.home-banner h1 span {
+  color: #56c596;
+  font-size: 2.3rem;
+}
+.home-banner p {
+  color: #379683;
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Swiper Section */
+.home-swiper-section {
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-swiper {
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(86, 197, 150, 0.10);
+}
+
+.home-swiper-slide {
+  min-height: 250px;
+  height: 350px;
+  border-radius: 18px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(86, 197, 150, 0.09);
+  overflow: hidden;
+}
+
+.home-swiper-slide:hover {
+  box-shadow: 0 8px 32px rgba(86, 197, 150, 0.18);
+}
+
+.swiper-slide-caption {
+  background: rgba(255,255,255,0.85);
+  padding: 1.1rem 1.5rem 1.1rem 1.2rem;
+  border-radius: 0 16px 0 0;
+  margin: 0 0 18px 0;
+  box-shadow: 0 2px 8px rgba(86, 197, 150, 0.12);
+  animation: fadeInUp 1.2s;
+}
+
+.swiper-slide-caption h3 {
+  margin: 0 0 0.5rem 0;
+  color: #234d20;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.swiper-slide-btn {
+  background: linear-gradient(90deg, #56c596 60%, #379683 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(86, 197, 150, 0.11);
+  transition: background 0.2s, box-shadow 0.2s;
+  display: inline-block;
+}
+.swiper-slide-btn:hover {
+  background: linear-gradient(90deg, #379683 60%, #56c596 100%);
+  box-shadow: 0 4px 24px rgba(86, 197, 150, 0.18);
+}
+
+/* Listings Section */
+.home-listings {
+  max-width: 1100px;
+  margin: 2.5rem auto 0 auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.listing-block {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 24px rgba(86, 197, 150, 0.13);
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.3rem;
+  animation: fadeInUp 1s;
+}
+
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.1rem;
+}
+
+.listing-header h2 {
+  color: #234d20;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.listing-link {
+  color: #56c596;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+.listing-link:hover {
+  color: #379683;
+  text-decoration: underline;
+}
+
+.listing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: flex-start;
+}
+
+/* Example for ListingItem root */
+.listing-item {
+  background: #a8e6cf;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(86, 197, 150, 0.08);
+  padding: 1rem;
+  min-width: 260px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.listing-item:hover {
+  box-shadow: 0 8px 32px rgba(86, 197, 150, 0.18);
+  transform: translateY(-6px) scale(1.03);
+}
+
+@media (max-width: 900px) {
+  .home-banner,
+  .home-listings,
+  .home-swiper {
+    max-width: 98vw;
+    padding: 1rem;
+  }
+  .listing-block {
+    padding: 1.3rem 0.7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-banner h1 {
+    font-size: 1.25rem;
+  }
+  .home-banner h1 span {
+    font-size: 1.4rem;
+  }
+  .listing-header h2 {
+    font-size: 1.1rem;
+  }
+  .home-swiper-slide {
+    height: 180px;
+  }
+  .listing-item {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-banner {
+    padding: 1.1rem 0.5rem 0.6rem 0.5rem;
+    border-radius: 0 0 18px 18px;
+  }
+  .home-listings {
+    padding: 0.5rem;
+  }
+  .listing-block {
+    padding: 0.9rem 0.2rem;
+  }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}

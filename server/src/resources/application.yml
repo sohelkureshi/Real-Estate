@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_URI:mongodb+srv://sohelkureshithechamp313:Schamp%40313@realestate.rquopxo.mongodb.net/RealEstate?retryWrites=true&w=majority&appName=RealEstate}
+      database: realestate
+
+jwt:
+  secret: sohel_kureshi_the_champ
+  expiration: 86400000 # 24 hours
+
+

@@ -1,0 +1,129 @@
+.signup-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fff6 60%, #a8e6cf 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  padding: 2rem 0;
+}
+
+.signup-card {
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(86, 197, 150, 0.16);
+  padding: 2.5rem 2.2rem 2.3rem 2.2rem;
+  max-width: 410px;
+  width: 100%;
+  animation: fadeInDown 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-title {
+  color: #234d20;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.signup-input {
+  border: 1.5px solid #a8e6cf;
+  background: #f8fff6;
+  padding: 0.95rem 1.1rem;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  color: #234d20;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(86, 197, 150, 0.06);
+}
+
+.signup-input:focus {
+  border: 1.5px solid #56c596;
+  box-shadow: 0 4px 16px rgba(86, 197, 150, 0.12);
+}
+
+.signup-btn {
+  background: linear-gradient(90deg, #56c596 60%, #379683 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.07rem;
+  padding: 0.85rem 0;
+  border: none;
+  border-radius: 14px;
+  margin-top: 0.3rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 2px 12px rgba(86, 197, 150, 0.09);
+  transition: background 0.2s, box-shadow 0.2s, opacity 0.2s;
+}
+
+.signup-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #379683 60%, #56c596 100%);
+  box-shadow: 0 4px 24px rgba(86, 197, 150, 0.18);
+  opacity: 0.96;
+}
+
+.signup-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.signup-footer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.signup-link {
+  color: #379683;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.signup-link:hover {
+  color: #56c596;
+  text-decoration: underline;
+}
+
+.signup-error {
+  color: #e74c3c;
+  margin-top: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  .signup-card {
+    padding: 1.5rem 0.7rem 1.3rem 0.7rem;
+    border-radius: 18px;
+    max-width: 98vw;
+  }
+  .signup-title {
+    font-size: 1.3rem;
+  }
+  .signup-form {
+    gap: 0.8rem;
+  }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px);}
+  to { opacity: 1; transform: translateY(0);}
+}

@@ -1,0 +1,118 @@
+.profile-btn {
+  background: linear-gradient(90deg, #56c596 60%, #379683 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 12px;
+  margin-top: 0.3rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 2px 12px rgba(86, 197, 150, 0.09);
+  transition: background 0.2s, opacity 0.2s;
+  position: relative;
+}
+.profile-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #379683 60%, #56c596 100%);
+  opacity: 0.96;
+}
+.profile-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.profile-create-listing {
+  background: linear-gradient(90deg, #a8e6cf 60%, #56c596 100%);
+  color: #234d20;
+  font-weight: 700;
+  font-size: 1.01rem;
+  padding: 0.6rem 0;
+  border-radius: 12px;
+  margin-top: 0.7rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 12px rgba(86, 197, 150, 0.09);
+}
+.profile-create-listing:hover {
+  background: linear-gradient(90deg, #56c596 60%, #a8e6cf 100%);
+  color: #379683;
+}
+
+.profile-delete {
+  background: #fee2e2;
+  color: #e74c3c;
+  font-weight: 700;
+  font-size: 1.07rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  margin: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.08);
+  display: inline-block;
+}
+.profile-delete:hover,
+.profile-delete:focus {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.profile-signout {
+  background: linear-gradient(90deg, #e0f7ef 60%, #a8e6cf 100%);
+  color: #379683;
+  font-weight: 700;
+  font-size: 1.07rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(86, 197, 150, 0.08);
+  display: inline-block;
+}
+.profile-signout:hover,
+.profile-signout:focus {
+  background: #379683;
+  color: #fff;
+}
+
+.profile-show-listings-btn {
+  background: linear-gradient(90deg, #a8e6cf 60%, #56c596 100%);
+  color: #234d20;
+  font-weight: 700;
+  font-size: 1.08rem;
+  padding: 0.9rem 0;
+  border: none;
+  border-radius: 12px;
+  margin: 1.1rem 0 0.7rem 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(86, 197, 150, 0.09);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.profile-show-listings-btn:hover,
+.profile-show-listings-btn:focus {
+  background: linear-gradient(90deg, #56c596 60%, #a8e6cf 100%);
+  color: #379683;
+  box-shadow: 0 4px 24px rgba(86, 197, 150, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .profile-show-listings-btn,
+  .profile-delete,
+  .profile-signout,
+  .profile-btn {
+    font-size: 0.97rem;
+    padding: 0.6rem 1rem;
+  }
+}
